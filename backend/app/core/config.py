@@ -1,18 +1,25 @@
-"""Application configuration using Pydantic Settings."""
-
 from pydantic_settings import BaseSettings
+from functools import lru_cache
 
 
 class Settings(BaseSettings):
+    app_name: str = "DClaw Sales"
     app_env: str = "dev"
-    api_host: str = "0.0.0.0"
-    api_port: int = 8101
+    debug: bool = True
+
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/dclaw_sales"
-    redis_url: str = "redis://localhost:6379/0"
-    ollama_base_url: str = "http://localhost:11434"
+
+    secret_key: str = "change-me-in-production"
+    access_token_expire_minutes: int = 60
 
     class Config:
         env_file = ".env"
+        case_sensitive = False
 
 
-settings = Settings()
+@lru_cache()
+def get_settings() -> Settings:
+    return Settings()
+
+
+settings = get_settings()
