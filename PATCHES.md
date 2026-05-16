@@ -15,17 +15,18 @@
 
 ## Active patches
 
-| Patch | Topic | Affects | In-repo copy |
-|---|---|---|---|
-| `PATCH-2026-05-15-shared-hub-postgres.md` | Shared hub postgres made durable; auto-creates `dclaw_<app>` DB per app | All apps with a DB on hub testbed | `dclaw-platform/PATCH-2026-05-15-shared-hub-postgres.md` |
+_(None — all current patches have been incorporated into `plan_v1.3.md`)_
 
 ## Retired patches
 
-_(None yet — first PLAN-v1.3 rollup will list what was folded in.)_
+| Patch | Topic | Retired | Folded Into |
+|---|---|---|---|
+| `PATCH-2026-05-15-shared-hub-postgres.md` | Shared hub postgres made durable; auto-creates `dclaw_<app>` DB per app | 2026-05-16 | `plan_v1.3.md` Section 4.1 |
 
-## See also
+---
 
-- `AGENTS.md` (this hub root) — org-wide agent context master
-- `dclaw-platform/agents/` — per-role agent prompts
-- `dclaw-platform/agents/swarm-dispatch/` — per-app build-prompt dispatcher
-- `scaffold-sync.sh` (this hub root) — propagate patches into `dclaw-*` repos
+## See Also
+
+- `plan_v1.3.md` — Single source of truth for roadmap, architecture decisions, and incorporated patches
+- `knowledge/index.md` — Obsidian-compatible knowledge graph
+- `AGENTS.md` — Architecture locks and anti-patterns

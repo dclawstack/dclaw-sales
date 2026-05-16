@@ -1,0 +1,20 @@
+{
+  "app_id": "dclaw-sales",
+  "version": "1.0.0-beta",
+  "last_updated": "2026-05-16",
+  "status": "C0-complete",
+  "ports": {
+    "backend": 8104,
+    "frontend": 3017,
+    "database_name": "dclaw_sales"
+  },
+  "entities": ["Lead", "Opportunity", "Quote"],
+  "tier_progress": {
+    "C0": { "status": "complete", "total": 9, "done": 9 },
+    "C1": { "status": "in-progress", "total": 7, "done": 5 },
+    "C2": { "status": "planned", "total": 7, "done": 0 }
+  },
+  "yc_readiness_score": 40,
+  "test_count": 28,
+  "endpoint_count": 17
+}

@@ -1,10 +1,10 @@
 # DClaw Sales
 
-> CRM AI, email sequences & forecasting
+> AI-powered sales pipeline management — Lead tracking, opportunity Kanban, quotes, and pipeline analytics.
 
-**Category:** Sales  
-**Version:** 0.1.0  
-**Status:** Coming Soon
+**Category:** Sales
+**Version:** 1.0.0-beta
+**Status:** 🟢 C0 Complete — Core CRUD live, 28 tests, Docker healthy
 
 ## Overview
 
