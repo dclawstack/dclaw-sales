@@ -1,5 +1,8 @@
 # DClaw Sales — v1.2 Feature Roadmap
 
+> 📘 **REVISED PRD v2.3 available:** See `REVISED-PRD.md` for complete gap analysis, current state, and full feature roadmap.
+
+
 > Based on: Y Combinator vertical SaaS principles, trending GitHub repos (gmail-mail-merge, outreach-tools), AI product research (Apollo.io, Clay, Lavender, Salesloft)
 
 ## Pre-Flight Checklist
