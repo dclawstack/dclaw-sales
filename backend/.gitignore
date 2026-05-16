@@ -40,5 +40,4 @@ venv/
 htmlcov/
 
 # Alembic
-alembic/versions/*.py
-!alembic/versions/.gitkeep
+!alembic/versions/*.py

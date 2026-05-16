@@ -27,7 +27,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from app.api.v1 import leads, opportunities, quotes, dashboard, lead_conversion
+
 app.include_router(health.router, prefix="/health", tags=["health"])
-# TODO: Wire v1 routers here after creating them
-# from app.api.v1 import some_router
-# app.include_router(some_router.router, prefix="/api/v1/some", tags=["some"])
+app.include_router(leads.router, prefix="/api/v1/leads", tags=["leads"])
+app.include_router(opportunities.router, prefix="/api/v1/opportunities", tags=["opportunities"])
+app.include_router(quotes.router, prefix="/api/v1/quotes", tags=["quotes"])
+app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["dashboard"])
+app.include_router(lead_conversion.router, prefix="/api/v1/leads", tags=["conversion"])

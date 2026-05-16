@@ -9,6 +9,7 @@ from alembic import context
 
 from app.core.config import settings
 from app.models.base import Base
+from app.models import Lead, Opportunity, Quote  # ensure models are imported for autogenerate
 
 # this is the Alembic Config object
 config = context.config

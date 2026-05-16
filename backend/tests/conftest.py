@@ -9,8 +9,11 @@ from app.core.database import get_db
 from app.models.base import Base
 
 TEST_DATABASE_URL = os.environ.get(
-    "DATABASE_URL",
-    "postgresql+asyncpg://postgres:postgres@localhost:5432/dclaw_app_test",
+    "TEST_DATABASE_URL",
+    os.environ.get(
+        "DATABASE_URL",
+        "postgresql+asyncpg://postgres:postgres@localhost:5432/dclaw_sales_test",
+    ),
 )
 
 test_engine = create_async_engine(TEST_DATABASE_URL, poolclass=NullPool)
